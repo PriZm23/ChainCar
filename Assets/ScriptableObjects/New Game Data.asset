@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7d34a0e5d131249b7ac4d61be4c796, type: 3}
+  m_Name: New Game Data
+  m_EditorClassIdentifier: 
+  acceleration:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  densityMap:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.1812973
+      value: 0.5222931
+      inSlope: -0.11942003
+      outSlope: -0.11942003
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.5910562
+      value: 0.31063858
+      inSlope: -0.0765392
+      outSlope: -0.0765392
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3.9039426
+      value: 0.23279059
+      inSlope: -0.033658374
+      outSlope: -0.033658374
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  infiniteAccelerationScale: 2
+  treePrefabs:
+  - {fileID: 6940554283853979557, guid: 0fc095772c52df146b3168e17c8e7e3b, type: 3}
+  - {fileID: 1554433804115732666, guid: 08b1e63cc8c07c048a34d3b383f1bd36, type: 3}
+  - {fileID: 2335225969462698797, guid: 2a0056ecc8af49d49ac3e6705ee492d6, type: 3}
+  timer: 0
+  isPlaying: 0
