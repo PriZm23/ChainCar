@@ -8,9 +8,9 @@ public class GroundChunk : MonoBehaviour
     public Transform container;
     public Transform bounds;
 
-    private void Awake()
+    private void OnEnable()
     {
-
+        DistributeTrees();
     }
 
     [ContextMenu("Distribute Trees")]
@@ -18,7 +18,7 @@ public class GroundChunk : MonoBehaviour
     {
         for (int i=container.childCount-1; i>=0; i--)
         {
-            Destroy(container.GetChild(i.gameObject);
+            Destroy(container.GetChild(i).gameObject);
         }
 
         float radius = data.GetCurrentPlacementRadius();
@@ -28,8 +28,11 @@ public class GroundChunk : MonoBehaviour
         {
             float x = 0.5f-(points[i].x / bounds.lossyScale.x);
             float z = 0.5f - (points[i].y / bounds.lossyScale.z);
-            Vector3 position = container.TransformPoint(new Vector3(x, .5f, z));
+            Vector3 position = bounds.TransformPoint(new Vector3(x, .5f, z));
             GameObject go = Instantiate(data.treePrefabs.GetRandom(), position, Quaternion.identity);
+            Vector3 lookRot = new Vector3(Random.insideUnitCircle.x, 0f, Random.insideUnitCircle.y);
+            go.transform.rotation = Quaternion.LookRotation(lookRot, Vector3.up);
+            go.transform.localScale = Vector3.one * data.treeScale + Vector3.one * Random.Range(-data.treeScaleModifier, data.treeScaleModifier);
             go.transform.SetParent(container);
         }
     }

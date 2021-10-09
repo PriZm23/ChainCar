@@ -8,6 +8,10 @@ public class GameData : ScriptableObject
     public AnimationCurve acceleration;
     public AnimationCurve densityMap;
     public float infiniteAccelerationScale = 2f;
+    public float treeScaleModifier;
+    public float treeScale;
+
+    public float playerSpeed;
 
     public GameObject[] treePrefabs;
 

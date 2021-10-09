@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b7d34a0e5d131249b7ac4d61be4c796, type: 3}
-  m_Name: New Game Data
+  m_Name: GameData
   m_EditorClassIdentifier: 
   acceleration:
     serializedVersion: 2
@@ -40,39 +40,41 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.1812973
-      value: 0.5222931
-      inSlope: -0.11942003
-      outSlope: -0.11942003
+      time: -1.8306775
+      value: 9.55273
+      inSlope: -2.1366394
+      outSlope: -2.1366394
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1.5910562
-      value: 0.31063858
-      inSlope: -0.0765392
-      outSlope: -0.0765392
+      time: 1.152829
+      value: 3.178052
+      inSlope: -1.4633901
+      outSlope: -1.4633901
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 3.9039426
-      value: 0.23279059
-      inSlope: -0.033658374
-      outSlope: -0.033658374
-      tangentMode: 34
+      time: 4.548818
+      value: 0.4947423
+      inSlope: -0.0063376795
+      outSlope: -0.0063376795
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.53873533
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   infiniteAccelerationScale: 2
+  treeScaleModifier: 0.2
+  treeScale: 1
   treePrefabs:
-  - {fileID: 6940554283853979557, guid: 0fc095772c52df146b3168e17c8e7e3b, type: 3}
-  - {fileID: 1554433804115732666, guid: 08b1e63cc8c07c048a34d3b383f1bd36, type: 3}
-  - {fileID: 2335225969462698797, guid: 2a0056ecc8af49d49ac3e6705ee492d6, type: 3}
+  - {fileID: 2222111361404534124, guid: 88f2fd29f58b9734683512546acec310, type: 3}
+  - {fileID: 4661435515762455780, guid: e289bf5debb17f6459818c207d781953, type: 3}
+  - {fileID: 6941765000743290380, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
   timer: 0
   isPlaying: 0
